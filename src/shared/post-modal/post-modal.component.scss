@@ -1,0 +1,30 @@
+.contentWrapper {
+  margin: 10px;
+
+  .dialogTitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .dialogContent {
+    font-size: 1.1rem;
+  }
+
+  .dialogUser {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    opacity: 0.8;
+  }
+
+}
+
+.postHeader {
+  display: flex;
+  padding: 10px !important;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: hotpink;
+}

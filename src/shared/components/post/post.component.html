@@ -1,0 +1,14 @@
+  <mat-card class="post">
+    <button mat-button class="postButton" (click)="openPost(postId, userId, title, body)">
+      <div>
+        <mat-card-header class="postHeader">Post #{{postId}}</mat-card-header>
+        <div class="separator">
+          <div class="authorWrapper">
+            <span class="postTitle">Title: {{title}}</span>
+            <p class="postUsername">User: {{userId}}</p>
+          </div>
+          <mat-card-content class="postContents">{{body}}</mat-card-content>
+        </div>
+      </div>
+    </button>
+  </mat-card>

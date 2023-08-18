@@ -1,0 +1,43 @@
+<div class="container">
+  <form class="form-container" (ngSubmit)="onSubmit()" [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Логин</mat-label>
+      <input
+        matInput
+        formControlName="login"
+        placeholder="Ваш логин">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Пароль</mat-label>
+      <input
+        matInput
+        formControlName="password"
+        [type]="showPassword ? 'password' : 'text'"
+        placeholder="Ваш пароль">
+      <button mat-icon-button
+              matSuffix
+              type="button"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="showPassword"
+              (click)="showPassword = !showPassword">
+        <mat-icon>{{showPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="buttons">
+      <button class="form-buttons"
+              mat-raised-button color="accent"
+              [disabled]="form.invalid"
+      >Войти
+      </button>
+      <button
+        type="button"
+        class="form-buttons"
+        mat-raised-button
+        color="primary"
+        (click)="loginAsGuest()"
+      >Войти как гость
+      </button>
+    </div>
+  </form>
+</div>
+

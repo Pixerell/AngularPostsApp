@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.logWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.userWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+
+  .username {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1.6rem;
+  }
+
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  .buttonText {
+    font-size: 1.25rem !important;
+  }
+}

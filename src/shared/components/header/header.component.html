@@ -1,0 +1,13 @@
+<mat-toolbar class="header">
+  <div class="logWrapper">
+    <div class="userWrapper">
+      <p class="username">Posts</p>
+    </div>
+    <div class="buttonWrapper">
+      <button *ngIf="!isLoggedIn(); else loggedInTemplate" mat-button (click)="login()">Логин</button>
+      <ng-template #loggedInTemplate>
+        <button class="buttonText" mat-button (click)="logout()">Выйти</button>
+      </ng-template>
+    </div>
+  </div>
+</mat-toolbar>

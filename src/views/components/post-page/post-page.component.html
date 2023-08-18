@@ -1,0 +1,14 @@
+<div>
+  <app-header></app-header>
+  <div>
+    <div *ngFor="let post of posts">
+      <app-post
+        [title]="post.title"
+        [body]="post.body"
+        [userId]="post.userId"
+        [postId]="post.id"
+      >
+      </app-post>
+    </div>
+  </div>
+</div>

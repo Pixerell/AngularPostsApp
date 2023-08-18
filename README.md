@@ -1,5 +1,5 @@
 # AngularPostsApp
-Angular 16.0 проект с авторизацией и выводом постов.
+Angular 16.0 проект с авторизацией и выводом постов. Весь код и логика находятся в ветке "master" :)
 
 # Инструкция по установке:
 
@@ -28,4 +28,5 @@ Angular 16.0 проект с авторизацией и выводом пост
 5 - Код вызова api через HttpClient
 ![image](https://github.com/Pixerell/AngularPostsApp/assets/90747184/84b5be1e-9695-4ca6-afa8-b705a5341ab3)
 
-
+6 - Код Routing
+![image](https://github.com/Pixerell/AngularPostsApp/assets/90747184/d6c7bf4b-b515-446c-9680-6e1198b6ee20)
